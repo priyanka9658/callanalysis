@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+#dialer_table {
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        #dialer_table tr td {
+            text-align: center;
+            height: 50px;
+            width: 33%;
+        }
+
+        #dialer_table #dialer_input_td {
+            border-bottom: 1px solid #fafafa;
+        }
+
+        #dialer_table #dialer_input_td input {
+            width: 100%;
+            border: none;
+            font-size: 1.6em;
+        }
+
+        /* Remove arrows from type number input : Chrome, Safari, Edge, Opera */
+        #dialer_table #dialer_input_td input::-webkit-outer-spin-button,
+        #dialer_table #dialer_input_td input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Remove arrows from type number input : Firefox */
+        #dialer_table #dialer_input_td input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        #dialer_table #dialer_input_td input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #cccccc;
+            opacity: 1; /* Firefox */
+        }
+
+        #dialer_table #dialer_input_td input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #cccccc;
+        }
+
+        #dialer_table #dialer_input_td input::-ms-input-placeholder { /* Microsoft Edge */
+            color: #cccccc;
+        }
+
+        #dialer_table #dialer_call_btn_td {
+            color: #ffffff;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-decoration: none;
+            padding: 5px 32px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px 2px 4px 2px;
+            transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            --webkit-transition: all 300ms ease;
+        }
+
+        #dialer_table #dialer_call_btn_td:hover {
+            background-color: #009d00;
+        }
+
+        #dialer_table .dialer_num_tr td {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+        }
+
+        #dialer_table .dialer_num_tr td:nth-child(1) {
+            border-right: 1px solid #fafafa;
+        }
+
+        #dialer_table .dialer_num_tr td:nth-child(3) {
+            border-left: 1px solid #fafafa;
+        }
+
+        #dialer_table .dialer_num_tr:nth-child(1) td,
+        #dialer_table .dialer_num_tr:nth-child(2) td,
+        #dialer_table .dialer_num_tr:nth-child(3) td,
+        #dialer_table .dialer_num_tr:nth-child(4) td {
+            border-bottom: 1px solid #fafafa;
+        }
+
+        #dialer_table .dialer_num_tr .dialer_num {
+            color: #0B559F;
+            cursor: pointer;
+        }
+
+        #dialer_table .dialer_num_tr .dialer_num:hover {
+            background-color: #fafafa;
+        }
+
+        #dialer_table .dialer_num_tr:nth-child(0) td {
+            border-top: 1px solid #fafafa;
+        }
+
+        #dialer_table .dialer_del_td img {
+            cursor: pointer;
+        }
